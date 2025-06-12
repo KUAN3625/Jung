@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 1.5rem;
+    /*頁面內縮*/
+    font-family: system-ui, sans-serif;
+    background-color: #414141;
+    color: rgb(30, 30, 30);
+}
+
+main {
+    display: flex;
+    /*Q彈排版*/
+    flex-direction: column;
+    /*垂直排列*/
+    align-items: center;
+    /*置中*/
+    gap: 2rem;
+    /*Q彈間距*/
+    width: 100%;
+    /*區塊寬度*/
+    max-width: 480px;
+    /*手機最大寬度*/
+    margin: auto;
+}
+
+
+/*文字區域寬度*/
+section:first-of-type div {
+    display: flex;
+    flex-wrap: wrap;
+    /*換行*/
+    justify-content: center;
+    /*置中*/
+    gap: 0.5rem;
+    /*Q彈間距*/
+}
+
+
+
+/*按鈕區排版*/
+section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    /*垂直排列*/
+    gap: 1rem;
+    /*Q彈間距*/
+    align-items: center;
+    /*置中*/
+    width: 100%;
+}
+
+
+
+button {
+    width: 40px;
+    height: 40px;
+
+    padding: 0.5rem 1rem;
+    /*內縮上下0.5 左右1*/
+    font-size: 1rem;
+    border: none;
+    /*無邊框*/
+    border-radius: 50%;
+    /*圓形按鈕*/
+    background-color: #ffffff;
+    /*背景色*/
+    cursor: pointer;
+    /*游標變手指*/
+
+    transition: background-color 0.4s ease;
+    /*過渡效果*/
+    box-shadow: #000000 0 5px;
+    /*陰影*/
+}
+
+
+button:hover {
+    /*在上面時*/
+    box-shadow: #000000 0 5 5px;
+    background-color: #FF8800;
+}
+
+
+
+button.selected {
+    /*選擇時*/
+    background-color: #161616;
+    color: #ffff;
+}
+
+/*最ˋ後一顆按鈕*/
+section:last-of-type>button {
+    background-color: #a0a0a0;
+    color: #ffff;
+    padding: 0.6rem 1.5rem;
+    /*內縮上下0.6 左右1.5*/
+    border: none;
+    /*無邊框*/
+    border-radius: 999px;
+    /*圓形按鈕*/
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    /*陰影*/
+
+    font-size: 1rem;
+    transition: background-color 0.4s ease;
+    /*過渡效果*/
+    cursor: pointer;
+    /*游標變手指*/
+}
+
+section:last-of-type>button:hover {
+    /*在上面時*/
+    background-color: #000000;
+}
+
+
+
+
+/*下面需要研究*/
+#card-image {
+    width: 80%;
+    height: 300px; /* ✅ 固定高度，避免被圖片撐開 */
+    padding: 1rem;
+    background-color: rgb(78, 78, 78);
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+    display: block;
+}
+
+#card-description {
+    width: 80%;
+    height: 120px; /* ✅ 固定文字區高度 */
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 1.1rem;/*放大文字面*/
+
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    line-height: 1.4;
+}
+
+
+
+/*小動畫*/
+
+
+#card-content{
+opacity: 1;
+transition: opacity 0.4s ease-in-out;
+
+
+}
+
+#card-content.fade-out{
+opacity: 0;
+
+}
