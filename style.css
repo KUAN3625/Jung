@@ -98,9 +98,9 @@ button.selected {
 
 /*最ˋ後一顆按鈕*/
 section:last-of-type>button {
-    background-color: #a0a0a0;
-    color: #ffff;
-    padding: 0.6rem 1.5rem;
+    background-color: #ffca60;
+    color: #ffffff;
+    padding: 1.5rem 3.5rem;
     /*內縮上下0.6 左右1.5*/
     border: none;
     /*無邊框*/
@@ -108,12 +108,15 @@ section:last-of-type>button {
     /*圓形按鈕*/
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
     /*陰影*/
-
     font-size: 1rem;
     transition: background-color 0.4s ease;
     /*過渡效果*/
     cursor: pointer;
     /*游標變手指*/
+font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section:last-of-type>button:hover {
