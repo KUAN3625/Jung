@@ -99,7 +99,7 @@ button.selected {
 /*最ˋ後一顆按鈕*/
 section:last-of-type>button {
     background-color: #ffca60;
-    color: #ffffff;
+    color: #000000;
     padding: 1.5rem 3.5rem;
     /*內縮上下0.6 左右1.5*/
     border: none;
